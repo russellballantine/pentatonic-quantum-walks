@@ -1,26 +1,48 @@
-# Pentatonic Quantum Walks (P-QW)
+================================================================================
+          PROJECT MANIFEST: PENTATONIC QUANTUM WALKS (P-QW)
+================================================================================
 
-An advanced quantum simulation framework uncoupling the physics of the untempered Spiral of Fifths into a standalone Continuous-Time Quantum Walk (CTQW) environment. By mapping irrational logarithmic frequency steps onto a 1D spatial lattice, the project simulates a native 1D Quasicrystal to explore the boundary lines between quantum wave-packet diffusion, fractal spectra, and localization.
+[PROJECT OVERVIEW]
+An advanced quantum simulation framework uncoupling the physics of the untempered 
+Spiral of Fifths into a standalone Continuous-Time Quantum Walk (CTQW) environment. 
+By mapping irrational logarithmic frequency steps onto a 1D spatial lattice, 
+the project simulates a native 1D Quasicrystal to explore the boundary lines 
+between quantum wave-packet diffusion, fractal spectra, and localization.
 
-## Core Architecture Deployed
-* **Tight-Binding Lattice Setup:** Driven by a customizable cosine modulation potential where the native structural parameter is $\alpha = \log_2(1.5) \approx 0.58496$ (the pure, untempered perfect fifth).
-* **Hamiltonian Model:** 
-  $$H_{ii} = \Lambda \cos(2\pi \alpha i)$$
-  $$H_{i,i\pm1} = -J$$
+[WORKSPACE MANAGEMENT STATE]
+- Repository Name: pentatonic-quantum-walks
+- Isolated Directory Path: ~/Developer/pentatonic-quantum-walks/
+- Environment: Isolated Python local `.venv` active.
+- Git Status: All tracking scripts, images, and requirements.txt staged and synchronized.
+- Documentation: GitHub Pages (README.md) updated with recent telemetry.
 
-## Empirical Recent Discoveries
+[CORE ARCHITECTURE DEPLOYED]
+1. `requirements.txt`: Formally updated via pip freeze to capture environment states.
+2. `src/lattice.py`: Refactored to accept dynamic frequency parameter `alpha` 
+   (defaults cleanly to native Spiral value alpha = log2(1.5)).
+3. `src/simulation.py`: Handles state propagation and spatial wave injection.
+4. `src/phase_transition.py`: Systematically sweeps Lambda vs Mean IPR. 
+   Validated suppression of finite-size noise at N=250, t_max=100.
+5. `src/butterfly.py`: Generates global Hofstadter fractal spectrum at Lambda=2.0.
+6. `src/butterfly_zoom.py`: High-resolution micro-sweep ([0.55 -> 0.62]) isolating 
+   the alpha=0.60 rational pinch point and the Golden Ratio boundary.
+7. `docs/images/`: Stores phase_transition_sweep.png and hofstadter_butterfly_zoom.png.
+8. `docs/research_notes/`: NOTE_01 and NOTE_02 fully logged and pushed.
 
-### 1. Localization Phase Transition Threshold
-Through an automated systemic sweep of the potential energy amplitude $\Lambda \in [0.1, 4.0]$ against a fixed kinetic hopping bandwidth ($J = 1.0$), we successfully isolated the critical localization elbow. 
-* **The Metallic Phase ($\Lambda < 2.0$):** The time-averaged Inverse Participation Ratio (IPR) flatlines tightly near $\sim 0.04$, indicating total ballistic/diffusive wave packet spreading across the spatial grid.
-* **The Insulating Boundary ($\Lambda \ge 2.0$):** Exactly matching the theoretical Aubry-André self-duality threshold, transport grinds to a halt via destructive phase interference.
-* *Diagnostic Asset saved at:* `docs/images/phase_transition_sweep.png`
+[EMPIRICAL RECENT DISCOVERIES]
+- Verified the Aubry-André localization threshold occurs precisely at Lambda = 2J, 
+  where the peak potential energy scale perfectly balances the true 1D kinetic scale (2J).
+- Microscale zoom mathematically isolates the Spiral of Fifths slice as a Cantor dust 
+  regime sitting tightly on the rugged boundary of the robust Golden Ratio gap.
 
-### 2. Hofstadter Fractal Matrix Mapping
-By promoting the frequency step parameter $\alpha$ to a dynamic sweep variable from $0 \to 1$, we mapped the global structural energy matrix landscape of our model.
+[NEXT STAGE: COMPARATIVE MATERIAL FRAMEWORK]
+Ready to branch the workspace into a comparative analysis between different musical scales 
+treated as unique quantum material crystals. 
 
-<img src="docs/images/hofstadter_butterfly_zoom.png" width="600" alt="Hofstadter Micro Spectrum Zoom"/>
-
-* **The $\alpha = 0.60$ Pinch Point:** High-resolution microscopic parsing reveals an energy band collapse exactly at the rational fraction $3/5$, verifying structural convergence.
-* **Topological Filtering:** The native Spiral of Fifths line cuts directly through major horizontal sub-gaps, acting as a directional filter that locks the walker into a discrete Cantor set of critical fractal states.
-* *Global Matrix Asset saved at:* `docs/images/hofstadter_butterfly.png`
+Options for immediate pickup:
+1. Build `src/scale_comparison.py` to launch the Pathway 1 Experiment: Run the Pentatonic 
+   (Quasicrystal), Chromatic (Periodic Crystal), Augmented (Alternative Quasicrystal), and 
+   Diminished (Symmetric Crystal) fields side-by-side to track wave-packet diffusion.
+2. Advance to Pathway 2 or 3 to test spectral fractal dimension or structural robustness 
+   against randomized hopping noise (J).
+================================================================================
