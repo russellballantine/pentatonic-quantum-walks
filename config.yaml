@@ -25,3 +25,11 @@ topological_phases:
   incommensurate_beta:
     alpha: 0.5849625007211562       # log2(1.5)
     label: "Incommensurate Phase Beta (Spiral-of-Fifths Derived)"
+# ==============================================================================
+# DISORDER SWEEP CONFIGURATION MATRIX
+# ==============================================================================
+disorder_system:
+  disorder_samples: 50            # Number of random structural iterations to average
+  noise_amplitude: 0.3            # Magnitude of random kinetic fluctuation (delta_J)
+  evaluation_time: 30.0           # Static snap time to measure localized footprint
+
