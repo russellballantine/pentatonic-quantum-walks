@@ -65,7 +65,7 @@ def plot_butterfly(alpha_points, energy_points, Lambda):
     # Scatter plot with high transparency and small markers to highlight fractal gaps
     ax.scatter(alpha_points, energy_points, s=0.3, c='#00FFCC', alpha=0.6, edgecolors='none')
     
-    # Visual line marking your native Spiral of Fifths step (log2(1.5) ~ 0.58496)
+    # Visual line marking the native Spiral of Fifths step (log2(1.5) ~ 0.58496)
     native_alpha = np.log2(1.5)
     ax.axvline(x=native_alpha, color='#FF3366', linestyle=':', alpha=0.7, 
                label=f'Spiral of Fifths Line ($\\alpha \\approx {native_alpha:.5f}$)')

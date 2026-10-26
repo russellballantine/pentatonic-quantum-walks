@@ -1,0 +1,6 @@
+.venv/
+paper.*
+paperNotes.bib
+.DS_Store
+__pycache__/
+*.pyc
