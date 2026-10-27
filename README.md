@@ -24,3 +24,19 @@ By promoting the frequency step parameter $\alpha$ to a dynamic sweep variable f
 * **The $\alpha = 0.60$ Pinch Point:** High-resolution microscopic parsing reveals an energy band collapse exactly at the rational fraction $3/5$, verifying structural convergence.
 * **Topological Filtering:** The native Spiral of Fifths line cuts directly through major horizontal sub-gaps, acting as a directional filter that locks the walker into a discrete Cantor set of critical fractal states.
 * *Global Matrix Asset saved at:* `docs/images/hofstadter_butterfly.png`
+
+## Citation
+
+If you use this simulation framework or the data structures in your research, please cite this repository and the corresponding preprint as follows:
+
+```bibtex
+@software{ballantine2026pentatonic,
+  author       = {Ballantine, Russell},
+  title        = {Pentatonic Quantum Walks (P-QW): A Quantum Simulation Framework for Incommensurate Lattices},
+  year         = {2026},
+  publisher    = {GitHub},
+  journal      = {GitHub Repository},
+  howpublished \(= {\url{https://github.com/russellballantine/pentatonic-quantum-walks}},\)
+  note         = {ORCID: 0000-XXXX-XXXX-XXXX}
+}
+```
