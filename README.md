@@ -36,7 +36,7 @@ If you use this simulation framework or the data structures in your research, pl
   year         = {2026},
   publisher    = {GitHub},
   journal      = {GitHub Repository},
-  howpublished \(= {\url{https://github.com/russellballantine/pentatonic-quantum-walks}},\)
+  howpublished = {\url{https://github.com/russellballantine/pentatonic-quantum-walks}},
   note         = {ORCID: 0009-0003-5800-512X}
 }
 ```
